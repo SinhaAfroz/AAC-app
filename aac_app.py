@@ -1,7 +1,8 @@
 import streamlit as st
+import Bio
 from Bio.SeqUtils.ProtParam import ProteinAnalysis
-import matplotlib.pyplot as plt
 import pandas as pd
+import matplotlib.pyplot as plt
 
 # Function to calculate AAC
 def calculate_aac(sequence):
