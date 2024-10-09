@@ -1,0 +1,14 @@
+from pyngrok import ngrok
+
+# Set authentication token if you haven't already done so
+ngrok.set_auth_token("your_token")
+
+# Start Streamlit server on a specific port
+!nohup streamlit run aac_app.py --server.port 5012 &
+
+# Start ngrok tunnel to expose the Streamlit server
+ngrok_tunnel = ngrok.connect(addr='5012', proto='http', bind_tls=True)
+
+# Print the URL of the ngrok tunnel
+print(' * Tunnel URL:', ngrok_tunnel.public_url)
+
