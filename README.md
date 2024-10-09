@@ -24,8 +24,12 @@ git clone https://github.com/yourusername/aac-app.git
 cd aac-app
 ```
 ### 2. Install Dependencies
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
 ### 3. Run the app
-```streamlit run aac_app.py```
+```
+streamlit run aac_app.py
+```
 
