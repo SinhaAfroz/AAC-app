@@ -32,4 +32,9 @@ pip install -r requirements.txt
 ```
 streamlit run aac_app.py
 ```
+## You can also use colab and run it on ngrok
 
+### 1. Write this before the code it will create a file
+%%writefile aac_app.py
+
+### 2. Then run the code written in the file ngrok_run.txt
